@@ -11,10 +11,6 @@ import numpy as np
 from openmovement.load import CwaData
 from pathlib import Path
 
-DIR_DATA = '../data/neurocog-lab/pupil-pilot'
-file_cwa = 'axivity.cwa'
-file_sync = 'synctime_2024-04-23_09-46-38.csv'
-
 def read_axivity(DIR_DATA, file_cwa):
     # read axivity cwa file
     with CwaData(f'{DIR_DATA}/{file_cwa}', include_gyro=True, include_temperature=True, include_accel=True, include_light=True) as cwa_data:
