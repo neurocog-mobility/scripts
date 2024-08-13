@@ -1,0 +1,17 @@
+Calculates freeze index, freezeband, motorband, and total power of a given time-series signal. FI is calculated using a hanning window convolution based on methods of Cockx et al. (2023) Journal of NeuroEngineering and Rehabilitation. 
+        
+        Parameters
+        ----------
+        data : array_like
+            The input data as a one-dimensional array.
+        fs: int
+            Sampling frequency of the data.
+        window: int
+            Window length in seconds.
+
+        Returns
+        -------
+
+        freeze_index, freeze_band, motor_band, total_power: array_like
+            one-dimensional arrays, and can be accessed using the properties freeze_index,
+            freeze_band, motor_band, and total_power as dot notation on the class object.
